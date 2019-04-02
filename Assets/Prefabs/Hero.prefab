@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5307727490038836700}
   m_Layer: 0
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 485809569946eca40b67ee5617187599, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,8 +95,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  fireRate: 0.1
-  bullet: {fileID: 1072374496463066821, guid: 257aadfeb5f56a74e9adf07be1d4e608, type: 3}
+  fireRate: 0.2
+  bullet: {fileID: 2096874029776984516, guid: 0188f86d89c5b324bad5409b610a2f61, type: 3}
+  bulletTwo: {fileID: 8725790503258012378, guid: a45831fdf53cc5f4ab7fbf209ec275ac,
+    type: 3}
+  bulletThree: {fileID: 4654325584330471431, guid: c7815ca3c22bbce4083b684ac6ec6e27,
+    type: 3}
+  lvl: 1
+  imageHp: {fileID: 0}
+  imageShield: {fileID: 0}
 --- !u!58 &5307727490038836703
 CircleCollider2D:
   m_ObjectHideFlags: 0
