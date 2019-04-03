@@ -9,6 +9,11 @@ TagManager:
   - redLaser
   - hero
   - meteor
+  - pillGreen
+  - pillBlue
+  - things_bronze
+  - things_silver
+  - things_gold
   layers:
   - Default
   - TransparentFX

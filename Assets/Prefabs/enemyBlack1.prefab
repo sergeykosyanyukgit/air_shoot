@@ -196,10 +196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f4f8d3982bdc44c9d1c016435611ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0.3
+  fireRate: 0.5
   bullet: {fileID: 548192997796286793, guid: e120ee0fba9665f46b5bff4a188d483a, type: 3}
   imgHp: {fileID: 6527183924790432250}
-  minAnimRate: 2
+  minAnimRate: -4
   maxAnimRate: 4
 --- !u!61 &6527183924342238408
 BoxCollider2D:

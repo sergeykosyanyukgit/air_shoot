@@ -262,7 +262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -176.25, y: -99.14502}
+  m_AnchoredPosition: {x: -175.74, y: 6.8}
   m_SizeDelta: {x: 354.52, y: 35.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &577731559
@@ -588,7 +588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -176.5, y: -99.14502}
+  m_AnchoredPosition: {x: -175.99, y: 6.8}
   m_SizeDelta: {x: 354.01, y: 35.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &693898811
@@ -844,7 +844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.300003}
+  m_AnchoredPosition: {x: -0.005004883, y: -57.300003}
   m_SizeDelta: {x: 0, y: -176.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219852125
@@ -1861,6 +1861,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero
       objectReference: {fileID: 0}
+    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
+        type: 3}
+      propertyPath: imageHp
+      value: 
+      objectReference: {fileID: 1761565798}
+    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
+        type: 3}
+      propertyPath: imageShield
+      value: 
+      objectReference: {fileID: 577731559}
+    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
+        type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 1910851993}
+    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
+        type: 3}
+      propertyPath: deadPanel
+      value: 
+      objectReference: {fileID: 1657587462}
     - target: {fileID: 5307727490038836697, guid: 7e3272e2aeee953419b843ffe58a2498,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1916,26 +1936,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
-        type: 3}
-      propertyPath: imageHp
-      value: 
-      objectReference: {fileID: 1761565798}
-    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
-        type: 3}
-      propertyPath: imageShield
-      value: 
-      objectReference: {fileID: 577731559}
-    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
-        type: 3}
-      propertyPath: score
-      value: 
-      objectReference: {fileID: 1910851993}
-    - target: {fileID: 5307727490038836702, guid: 7e3272e2aeee953419b843ffe58a2498,
-        type: 3}
-      propertyPath: deadPanel
-      value: 
-      objectReference: {fileID: 1657587462}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e3272e2aeee953419b843ffe58a2498, type: 3}
 --- !u!1001 &7712746403162398832
@@ -2004,6 +2004,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399674257036152634, guid: 41f14ef00fb1481479be87b05d9fd07b,
+        type: 3}
+      propertyPath: enemySpawnRate
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 399674257036152634, guid: 41f14ef00fb1481479be87b05d9fd07b,
+        type: 3}
+      propertyPath: bonusSpawnRate
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41f14ef00fb1481479be87b05d9fd07b, type: 3}

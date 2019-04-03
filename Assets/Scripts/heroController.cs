@@ -8,8 +8,8 @@ public class heroController : MonoBehaviour{
     private Vector3 positionMove;
     public float speed = 5.0f;
 
-    public float fireRate = 0.1f;
-    private float time = 0.0f;
+    public float fireRate = 0.2f;
+    public float time = 0.0f;
 
     public GameObject bullet;
     public GameObject bulletTwo;
@@ -90,21 +90,46 @@ public class heroController : MonoBehaviour{
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        if(col.tag == "redLaser") {
+        if(col.tag == "meteor" || col.tag == "redLaser") {
             Destroy(col.gameObject);
-            hp-=10.0f;
-            imageHp.fillAmount = hp/maxHp;
-            if(hp <= 0){
-                deadPanel.SetActive(true);
+            float damage = 10.0f;
+            if(shield >= damage) {
+                shield -= damage;
+                imageShield.fillAmount = shield/maxShield;
+            }else if(hp >= damage){
+                hp-=damage;
+                imageHp.fillAmount = hp/maxHp;
             }
-        }
-        if(col.tag == "meteor") {
-            Destroy(col.gameObject);
-            hp-=10.0f;
-            imageHp.fillAmount = hp/maxHp;
             if(hp <= 0){
                 deadPanel.SetActive(true);
             }   
+        }        
+
+        if(col.tag == "pillGreen"){
+            Destroy(col.gameObject);
+            hp = 100;
+            imageHp.fillAmount = hp/maxHp;
+        }
+        if(col.tag == "pillBlue"){
+            Destroy(col.gameObject);
+            shield = 50;
+            imageShield.fillAmount = shield/maxShield;
+        }
+        if(col.tag == "things_bronze"){
+            Destroy(col.gameObject);
+            if(time > 0.14f) time-=0.002f;
+        }
+        if(col.tag == "things_silver"){
+            Destroy(col.gameObject);
+            if(time > 0.14f) time-=0.004f;
+        }
+        if(col.tag == "things_gold"){
+            Destroy(col.gameObject);
+            if(lvl < 3){
+                lvl++;
+            }else{
+                if(time > 0.14f) time-=0.005f;
+            }
         }
     }
 

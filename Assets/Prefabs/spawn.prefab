@@ -64,7 +64,12 @@ MonoBehaviour:
   - {fileID: 693386563669182643, guid: 48ddf0c48e34efd408553b2e8f19e6da, type: 3}
   - {fileID: 1338948784298945753, guid: 6edcb9fe2a1e1bd49a2616c809565854, type: 3}
   - {fileID: 4707961967934260479, guid: 4803ec1d63c96304799bbd970ad27848, type: 3}
-  bonus: []
+  bonus:
+  - {fileID: 5767884034011433484, guid: 8b1d9c41dc55b10458adce324e2bf86a, type: 3}
+  - {fileID: 7892311207359316952, guid: c328aba4cb3bb1f4eae166a076c82890, type: 3}
+  - {fileID: 4566994684039905738, guid: 9d499cabac6e4a342a696957285b0514, type: 3}
+  - {fileID: 8525890577852531343, guid: f358b9646cdaa3842900d48079c20152, type: 3}
+  - {fileID: 118531134954021640, guid: cf33d6c7ef761c44d9c5d274625d46c4, type: 3}
   enemySpawnRate: 4
   meteorSpawnRate: 2
   bonusSpawnRate: 10
