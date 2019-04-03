@@ -101,9 +101,12 @@ MonoBehaviour:
     type: 3}
   bulletThree: {fileID: 4654325584330471431, guid: c7815ca3c22bbce4083b684ac6ec6e27,
     type: 3}
-  lvl: 1
+  lvl: 3
   imageHp: {fileID: 0}
   imageShield: {fileID: 0}
+  score: {fileID: 0}
+  scorepoints: 0
+  deadPanel: {fileID: 0}
 --- !u!58 &5307727490038836703
 CircleCollider2D:
   m_ObjectHideFlags: 0

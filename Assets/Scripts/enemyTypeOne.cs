@@ -14,7 +14,7 @@ public class enemyTypeOne : MonoBehaviour{
     float maxHp;
 
     Animator animator;
-    public float minAnimRate = 2.0f;
+    public float minAnimRate = -4.0f;
     public float maxAnimRate = 4.0f;
     private float timeAnim = 0.0f;
     bool swAnim = false;

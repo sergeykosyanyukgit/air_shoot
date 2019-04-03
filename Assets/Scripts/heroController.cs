@@ -27,17 +27,22 @@ public class heroController : MonoBehaviour{
     public Text score;
     public int scorepoints = 0;
 
+    public GameObject deadPanel;
+
     private void Start(){
         positionMove = transform.position;
         time = fireRate;
         maxHp = hp;
         maxShield = shield;
+        deadPanel.SetActive(false);
     }
 
     private void Update(){
-        UpdateFire();
-        UpdateInput();
-        UpdateMove();
+        if(hp > 0){
+            UpdateFire();
+            UpdateInput();
+            UpdateMove();
+        }
     }
 
     public void AddScore(int scored){
@@ -90,7 +95,7 @@ public class heroController : MonoBehaviour{
             hp-=10.0f;
             imageHp.fillAmount = hp/maxHp;
             if(hp <= 0){
-                Destroy(gameObject, 0.25f);
+                deadPanel.SetActive(true);
             }
         }
         if(col.tag == "meteor") {
@@ -98,8 +103,15 @@ public class heroController : MonoBehaviour{
             hp-=10.0f;
             imageHp.fillAmount = hp/maxHp;
             if(hp <= 0){
-                Destroy(gameObject, 0.25f);
+                deadPanel.SetActive(true);
             }   
         }
+    }
+
+    public void restartLevel(){
+        Application.LoadLevel("SampleScene");
+    }
+    public void mainMenu(){
+        Application.LoadLevel("Menu");
     }
 }
